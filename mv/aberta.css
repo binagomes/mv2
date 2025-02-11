@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    position:absolute;
+      background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100vw;
+        height: 100vh;
+       
+      }
+      .item-1{
+        background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 10px;
+    gap: 5;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 800px; /* Largura fixa */
+    height: 400px;
+    margin: 20px auto; /* Centraliza o container na página */
+    margin-top: 150px;
+    text-align: center; /* Alinha o texto no centro */
+      }
+      .h3 { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffd0de;
+      }
+      .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        justify-self: center;
+        color: #dd1669;
+      }
+      
+      
+      .texto {
+         opacity: 0; /* Começa invisível */
+         transition: opacity 2s ease-in; /* Efeito de fade-in suave */
+       }
+         
+      .show {
+       opacity: 1; /* Fica visível */
+         }
+      
+      .some{
+      margin-bottom: 25px;
+        display: flex;
+        justify-content: center;  /* Centraliza horizontalmente */
+        align-items: center; 
+        position: absolute; 
+        z-index: 3; 
+        width: 450px;
+        height: auto;   
+      }
+      #image {  
+   
+        width: 450px;
+        height: auto;   
+       
+      }
+      
+      #briga { 
+        position: absolute; /* Permite usar right */
+        z-index: 2;
+        width: 250px;
+        right: 20%; /* Ajustado para não sair da tela */
+        bottom: 50px;
+      }
+      .icons {
+ 
+        position: fixed;
+      padding: 20px;
+      display: flex;
+      color: #fd297a;
+      justify-content: space-around;
+      gap: 10px;
+      margin-top: 600px;
+      z-index: 1;
+      
+      
+    
+    }
+    .icons i{
+       font-size: 35px;
+       height: 50vh; 
+       
+    }
+     .icons i:hover{
+        color: #ffd0de;
+        
+     }
+     #iconmv{
+        margin-top: 100%;
+    
+     }
+
+
+      /* Responsividade para telas pequenas (celulares) */
+@media screen and (max-width: 768px) {
+    .container {
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+
+    .item-1 {
+        width: 80%; /* Largura adaptada para telas menores */
+        height: 80%;
+        margin-top: 20px; /* Ajuste da margem */
+        padding: 15px; /* Ajuste do padding para mais espaço */
+    }
+
+    .h3, .text {
+        font-size: 18px; /* Reduz o tamanho da fonte para telas menores */
+       
+    }
+    .texto{
+        position: absolute;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    .image {
+        width: 80px; /* Diminui o tamanho da imagem */
+        height: 90px;
+        top: 10px; /* Ajuste a posição para celular */
+    }
+
+    #briga {
+        width: 250px; /* Ajuste da largura da imagem */
+        right: 10%; /* Ajuste de posicionamento */
+        bottom: 160px; /* Ajuste da posição no celular */
+        position: absolute;
+        justify-content: center;
+    }
+
+    .icons {
+        top: 200px; /* Mantém ícones na parte inferior */
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 15px; /* Espaçamento maior entre ícones */
+    }
+
+    .icons i {
+        font-size: 25px; /* Ícones menores para celular */
+    }
+}
+/* Responsividade para telas muito pequenas (como celulares em modo retrato) */
+@media screen and (max-width: 589px ) {
+    .container { display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+    .h3, .text {
+        font-size: 9px; /* Fontes ainda menores */
+    }
+
+    .item-1 {
+        position: relative;
+        width: 80%; /* Aumenta a largura do item 1 para usar mais espaço */
+        height: 75%;
+    }
+#briga {
+   
+    width: 150px;
+    height: auto;
+    position: relative;
+    margin-top: 590px;
+    left: 35%;
+}
+    #image {
+        width: 300px; /* Imagem ainda menor */
+    }
+
+    .icons i {
+        position: relative;
+        font-size: 25px; /* Ícones ainda menores */
+    }
+}
+
+/* Responsividade para telas muito pequenas (como celulares em modo retrato) */
+@media screen and (max-width: 767px ) {
+    .container { display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+    .h3, .text {
+        font-size: 10px; /* Fontes ainda menores */
+    }
+
+    .item-1 {
+        position: relative;
+        width: 80%; /* Aumenta a largura do item 1 para usar mais espaço */
+        height: 75%;
+    }
+#briga {
+   
+    width: 150px;
+    height: auto;
+    position: relative;
+    margin-top: 590px;
+    left: 35%;
+}
+    #image {
+        width: 300px; /* Imagem ainda menor */
+    }
+
+    .icons i {
+        position: relative;
+        font-size: 25px; /* Ícones ainda menores */
+    }
+}
+/* Responsividade para telas muito pequenas (como celulares em modo retrato) */
+@media screen and (max-width: 589px ) {
+    .container { display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+    .h3, .text {
+        font-size: 10px; /* Fontes ainda menores */
+    }
+
+    .item-1 {
+        position: relative;
+        width: 80%; /* Aumenta a largura do item 1 para usar mais espaço */
+        height: 75%;
+    }
+#briga {
+   
+    width: 150px;
+    height: auto;
+    position: relative;
+    margin-top: 690px;
+    left: 35%;
+}
+    #image {
+        width: 300px; /* Imagem ainda menor */
+    }
+
+    .icons i {
+        position: relative;
+        font-size: 25px; /* Ícones ainda menores */
+    }
+}
+
+/* Responsividade para telas muito pequenas (como celulares em modo retrato) */
+@media screen and (max-width: 480px ) {
+    .container { display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+    .h3, .text {
+        font-size: 10px; /* Fontes ainda menores */
+    }
+
+    .item-1 {
+        position: relative;
+        width: 80%; /* Aumenta a largura do item 1 para usar mais espaço */
+        height: 75%;
+    }
+#briga {
+   
+    width: 150px;
+    height: auto;
+    position: relative;
+    margin-top: 590px;
+    left: 35%;
+}
+    #image {
+        width: 300px; /* Imagem ainda menor */
+    }
+
+    .icons i {
+        position: relative;
+        font-size: 25px; /* Ícones ainda menores */
+    }
+}
+@media screen and (max-width: 420px ) {
+    .container { display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+    .h3, .text {
+        font-size: 12px; /* Fontes ainda menores */
+    }
+
+    .item-1 {
+        position: relative;
+        width: 85%; /* Aumenta a largura do item 1 para usar mais espaço */
+        height: 35%;
+    }
+#briga {
+   
+    width: 150px;
+    height: auto;
+    position: relative;
+    margin-top: 540px;
+    left: 35%;
+}
+    #image {
+        width: 280px; /* Imagem ainda menor */
+    }
+
+    .icons i {
+    
+        font-size: 10px; /* Ícones ainda menores */
+    }
+}
+@media screen and (max-width: 400px ) {
+    .container { display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+    .h3, .text {
+        font-size: 12px; /* Fontes ainda menores */
+    }
+
+    .item-1 {
+        position: relative;
+        width: 85%; /* Aumenta a largura do item 1 para usar mais espaço */
+        height: 35%;
+    }
+#briga {
+   
+    width: 150px;
+    height: auto;
+    position: relative;
+    margin-top: 540px;
+    left: 35%;
+}
+    #image {
+        width: 280px; /* Imagem ainda menor */
+    }
+
+    .icons i {
+    
+        font-size: 10px; /* Ícones ainda menores */
+    }
+}
+@media screen and (max-width: 360px ) {
+    .container { display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+        width: 100%; /* Largura 100% em telas pequenas */
+        height: 100vh; /* Ajuste automático da altura */
+    }
+    .h3, .text {
+        font-size: 12px; /* Fontes ainda menores */
+    }
+
+    .item-1 {
+        position: relative;
+        width: 85%; /* Aumenta a largura do item 1 para usar mais espaço */
+        height: 35%;
+    }
+#briga {
+   
+    width: 110px;
+    height: auto;
+    position: relative;
+    margin-top: 500px;
+    left: 35%;
+}
+    #image {
+        width: 200px; /* Imagem ainda menor */
+    }
+
+    .icons i {
+    
+        font-size: 8px; /* Ícones ainda menores */
+    }
+}
+@media screen and (max-width: 360px ) {
+    .h3, .text {
+        font-size: 10px; /* Fontes ainda menores */
+    }
+}

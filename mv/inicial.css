@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none !important;
+}
+.container {
+  position: absolute;
+  background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 0 20px 10px #ccc;
+}
+.input[type="date"] {
+  font-size: 16px;
+  padding: 5px;
+}
+/* Ajustar imagem na tela menor */
+.gatinho {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50vh;
+  margin-bottom: 20px;
+}
+
+img {
+  margin-bottom: 80%;
+  transform: scale(0.5);
+}
+
+/* Ajustar os botões */
+#button {
+  width: 200px; /* Aumentei para um tamanho mais visível */
+  height: 40px;
+  margin-bottom: 2px;
+  border-radius: 25px;
+  border: 0.2px solid ;
+  border-color: #ff7a7a;
+  background: linear-gradient(60deg, #ff7a7a, #ffa9db);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+#button:hover {
+  filter: brightness(140%);
+}
+
+.butn {
+  margin-top: 10px;
+  padding: 1px 185px;
+}
+
+#formulario {
+ 
+  margin: 10px auto; /* Centraliza o formulário */
+  padding: 5px;
+ 
+  border-radius: 10px;
+ 
+  text-align: center;
+}
+
+/* Estilização dos rótulos (labels) */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block; /* Faz o label ocupar uma linha inteira */
+  margin-bottom: 2px;
+  color: #555;
+}
+
+/* Estilização dos campos de entrada (inputs) */
+input {
+  width: 120px;
+  padding: 10px;
+  margin-bottom: 2px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Mudar a borda ao focar no input */
+input:focus {
+  border-color: #ff4b81;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 75, 129, 0.5);
+}
+
+.container_butn1 {
+  display: flex;
+  left: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container_butn2 {
+  display: flex;
+  right: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.back {
+  background: linear-gradient(60deg, #ff7a7a, rgb(255, 122, 151), #ffa9db);
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 3;
+}
+
+.carta {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 20px auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#cartamv {
+  width: 350px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  border: 4px solid #383838;
+  height: auto;
+  box-shadow: 25px 50px 30px #888888;
+  border-radius: 15px;
+}
+
+#cartamv:hover {
+  transform: scale(1.1);
+  filter: brightness(140%);
+}
+
+#anuncio {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+#anuncio:hover {
+  color: #ff7a7a;
+}
+
+.back #icbck {
+  margin-top: 840;
+}
+
+.icons {
+  position: flex;
+  padding: 20px;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.icons i {
+  font-size: 40px;
+  height: 50vh;
+}
+
+.icons i:hover {
+  color: #ff4b81;
+}
+
+#iconmv {
+  margin-top: 100%;
+}
+
+/* Media Queries para tornar o site responsivo */
+
+/* Para telas menores que 768px (telas de celular ou tablets pequenos) */
+@media screen and (max-width: 760px)  {
+  
+.container {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+  .butn {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px; /* Mantém os botões no final da tela */
+    left: 40%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    width: 200px; /* Aumentei para um tamanho mais visível */
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #ff7a7a, #ffa9db);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+  
+  .button:hover {
+    filter: brightness(1.2);
+  }
+  .gatinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 10px;
+  }
+  
+  .back {
+    display: grid;
+    grid-column: 1 / span 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .carta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsividade para celulares */
+  @media (max-width: 768px) {
+    .container {
+      position: absolute;
+      grid-template-rows: auto; /* Ajusta o tamanho automaticamente */
+      grid-template-columns: 1fr; /* Apenas uma coluna */
+      gap: 10px;
+    }
+  
+    .button {
+      width: 100%; /* Faz os botões ocuparem toda a largura */
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Uma coluna única */
+    grid-template-rows: 1fr 1fr; /* Ajusta as linhas */
+  }
+
+  .gatinho img {
+    width: 80%; 
+    margin-bottom: 20%;
+  }
+
+  .carta {
+    width: 80%; 
+    margin-top: 20px;
+  }
+
+  .button {
+    position: relative;
+    width: 300%; 
+    height: auto;
+    padding: 15px 3PX; 
+  }
+
+  .icons {
+    margin-top: 20px;
+    flex-direction: column; 
+
+  .icons i {
+    font-size: 30px; 
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carta {
+    width: 200px; 
+    margin-top: 10px;
+  }
+  #cartmv{
+    width: 200px;
+  }
+  
+  .butn {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom: 140px; /* Mantém os botões no final da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+  .button {
+    width: 150px; /* Os botões vão ocupar toda a largura */
+    padding: 10px 0;
+  }
+
+  .icons {
+    margin-top: 10px;
+    gap: 5px; /* Reduz o espaço entre os ícones */
+  }
+
+  .icons i {
+    font-size: 25px; /* Reduz ainda mais o tamanho dos ícones */
+    height: 35vh;
+  }
+}
+}
+@media screen and (max-width: 400px) {
+  .container {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carta {
+    width: 200px; 
+    margin-top: 10px;
+  }
+  #cartmv{
+    width: 200px;
+  }
+  
+  .butn {
+    position: absolute;
+    bottom: 30px; /* Desce os botões para perto do final da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+  .button {
+    width: 150px; /* Os botões vão ocupar toda a largura */
+    padding: 10px 0;
+  }
+  .gatinho{
+     
+    margin-top: 20px; /* Ajuste menor para subir */
+    transform: translateY(-30px); /* Move para cima */
+    }
+  }
+}
+
+

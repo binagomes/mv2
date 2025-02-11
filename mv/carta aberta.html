@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="aberta.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">
+            <div class="some">
+                <img src="cart_aberta.png" alt="" id="image">
+            </div>
+            
+            <style>
+              .hidden {
+                opacity: 0;
+                transition: opacity 2s ease-out;
+              }
+            </style>
+            
+            <script>
+              setTimeout(() => {
+                document.getElementById("image").classList.add("hidden");
+              }, 2000);
+            </script>
+    <style>
+        .texto {
+            opacity: 0; /* Começa invisível */
+            transition: opacity 3s ease-in; /* Suaviza a transição */
+        }
+
+        .show {
+            opacity: 1; /* Fica visível */
+        }
+    </style>
+    <div class="texto" id="meuTexto">
+        <h3 class="text">Eu gosto de você mais do que sou capaz de te contar <br> </br>
+          e se eu te amasse, talvez fizesse um site para você. 
+          
+        </h3>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("meuTexto").classList.add("show");
+        }, 3000); // O texto aparece após 2 segundos
+    </script>
+     <img src="briga.gif" alt="" id="briga">
+            
+       </div>
+
+    </div>
+</body>
+</html>

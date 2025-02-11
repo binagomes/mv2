@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="inicial.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="gatinho"><img src="2iFb.gif" alt="gatinho">
+        </div>
+<div class="butn">
+    
+      <!--<a href="./index.php">
+          <button class="button" (click)="login()">Criar sua conta</button>
+        </a>
+
+       <a href="./entrar.php">
+          <button class="button" (click)="login()">Acessar sua conta</button>
+        </a>>--> 
+        <form id="formulario" onsubmit="return verificarValores(event)">
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" id="data" name="data" required><br>
+            
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+    
+            <button type="submit" id="button">Enviar</button>
+        </form>
+
+    <script>
+        function verificarValores(event) {
+            event.preventDefault();  // Impede o envio do formulário
+
+            // Pega os valores dos campos
+            const data = document.getElementById("data").value;
+            const nome = document.getElementById("nome").value;
+
+            // Condições para redirecionamento
+            if (data === "2006-07-13" && nome === "Maria Vitoria Paro de Lima") {
+                window.location.href = 'carta aberta.html';
+            } else {
+                alert("OPs, isso não é para você!");  // Alerta se os dados estiverem incorretos
+            }
+        }
+    </script>
+    
+</div>
+
+<div class="back">
+    <div class="carta">
+        <img src="carta.png" alt="carta" id="cartamv">
+        <h3 id="anuncio"> Para ler sua carta, logar seu usuário :)</h3>
+        
+</div>
+
+
+
+</div>
+
+ 
+
+</body>
+</html>
